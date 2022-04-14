@@ -4,21 +4,22 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const NavigationBar = (props) => {
     return (
-        <Container>
-
-            <Navbar expand="lg" variant="light" bg="light">
-
-                <Container>
-
-                    <Navbar.Brand href="#">Navbar</Navbar.Brand>
-
-                </Container>
-
-            </Navbar>
-
-      </Container>
-    )
-}
+        <Navbar bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src='./bootstrap-react-logo.svg'
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    Social Feed
+                </Navbar.Brand>
+            </Container>
+        </Navbar>
+    );
+};
 
 
 export default NavigationBar;
