@@ -5,11 +5,19 @@ import './App.css';
 
 
 function App() {
+
+  const [posts, setPosts] = useState([{name: 'TIkaani Aurora', post: 'Arf, woof.'}, {name: 'Kalani Luna', post: 'Woof, grrr.'}]);
+
+  function addNewPost(post) {
+    let tempPosts = [post, ...posts];
+    setPosts(tempPosts);
+  }
+
   return (
     <div className='container-fluid'>
 
       <NavigationBar />
-      <CreatePosts />
+      <CreatePosts addNewPost={addNewPost} />
       
     </div>
   );

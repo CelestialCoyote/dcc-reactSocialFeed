@@ -15,7 +15,7 @@ const CreatePostsForm = (props) => {
             post: post
         };
         console.log(newPost);
-        props.addNewEntry(newPost);
+        props.addNewPost(newPost);
     }
 
     return (
@@ -24,7 +24,7 @@ const CreatePostsForm = (props) => {
             <div className='form-group'>
 
                 <label>Name</label>
-                <input className='form-control' type='text' value={name} onChange={(event) => setName(parseFloat(event.target.value))} />
+                <input className='form-control' type='text' value={name} onChange={(event) => setName(event.target.value)} />
 
             </div>
 
@@ -36,7 +36,7 @@ const CreatePostsForm = (props) => {
             </div>
             
             
-            <button className='btn btn-primary' type='submit' style={{'margin-top' : '1.0em'}}>Post</button>
+            <button className='btn btn-primary' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
 
         </form>
     );
