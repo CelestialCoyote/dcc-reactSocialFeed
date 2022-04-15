@@ -15,9 +15,11 @@ function App() {
   }
 
   return (
+
     <div id='main-container' className='container-fluid'>
 
       <NavigationBar />
+
       <div id='posts-container' className='col-9'>
 
         <div className='border-box'>
@@ -27,12 +29,12 @@ function App() {
         <div>
           <DisplayPosts parentPosts={posts} />
         </div>
+
       </div>
-      
-      
       
     </div>
   );
 }
+
 
 export default App;

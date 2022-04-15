@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './CreatePostsForm.css';
 
 
-
 const CreatePostsForm = (props) => {
 
     const [name, setName] = useState('');
@@ -19,24 +18,35 @@ const CreatePostsForm = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className='form-grid'>
+        <form id='create-post-container' className='container' onSubmit={handleSubmit}>
 
-            <div className='form-group'>
+            <div className='column'>
 
-                <label>Name</label>
-                <input className='form-control' type='text' value={name} onChange={(event) => setName(event.target.value)} />
+                <div className='row'>
+
+                    <div className='create-post-entry'>
+
+                        <label className='create-post-label'>Name</label>
+                        <input className='' type='text' value={name} onChange={(event) => setName(event.target.value)} />
+
+                    </div>
+
+                    <div className='create-post-entry'>
+
+                        <label className='create-post-label'>Post</label>
+                        <input className='' type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <button id='submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
+
+                </div>
 
             </div>
-
-            <div className='form-group'>
-
-                <label>Post</label>
-                <input className='form-control' type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
-                
-            </div>
-            
-            
-            <button className='btn btn-primary' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
 
         </form>
     );
