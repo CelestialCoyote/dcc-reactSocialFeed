@@ -1,25 +1,19 @@
+import './DisplayPosts.css';
+
+
 const DisplayPosts = (props) => {
     return ( 
-        <table className="table">
-            <thead>
-                <tr>
-                    <th>Entry Number</th>
-                    <th>Weight</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                {props.parentEntries.map((entry, index) => {
+        <div className="column">
+            {props.parentPosts.map((post, index) => {
                     return (
-                    <tr key={index}>
-                        <td>{index + 1}</td>
-                        <td>{entry.weight}</td>
-                        <td>{entry.date}</td>
-                    </tr>
+                        <div className="post-container"  key={index}>
+                            <div>{post.name}</div>
+                            <div>{post.post}</div>
+                        </div>
                     );
                 })}
-            </tbody>
-        </table>
+
+        </div>
     );
 }
  
