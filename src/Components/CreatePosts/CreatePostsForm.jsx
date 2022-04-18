@@ -17,37 +17,19 @@ const CreatePostsForm = (props) => {
     }
 
     return (
-        <form id='create-post-container' className='container' onSubmit={handleSubmit}>
 
-            <div className='column'>
+        <form onSubmit={handleSubmit}>
 
-                <div className='row'>
+            <label className='create-post-label'>Name</label>
+            <input className='' type='text' value={name} onChange={(event) => setName(event.target.value)} /><br></br>
 
-                    <div className='create-post-entry'>
+            <label className='create-post-label'>Post</label>
+            <input className='' type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
 
-                        <label className='create-post-label'>Name</label>
-                        <input className='' type='text' value={name} onChange={(event) => setName(event.target.value)} />
-
-                    </div>
-
-                    <div className='create-post-entry'>
-
-                        <label className='create-post-label'>Post</label>
-                        <input className='' type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
-
-                    </div>
-
-                </div>
-
-                <div>
-
-                    <button id='submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
-
-                </div>
-
-            </div>
+            <button id='submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
 
         </form>
+
     );
 }
  

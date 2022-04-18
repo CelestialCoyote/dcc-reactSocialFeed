@@ -3,7 +3,8 @@ import Post from '../Post/Post';
 
 
 const DisplayPosts = (props) => {
-    return ( 
+    return (
+
         <div>
             {props.parentPosts.map((post, index) => {
                 return (
