@@ -1,9 +1,10 @@
-import Post from './Components/Post/Post';
+import React from 'react';
+import Post from '../Post/Post';
 
 
 const DisplayPosts = (props) => {
     return ( 
-        <div className="column">
+        <div>
             {props.parentPosts.map((post, index) => {
                 return (
                     <div>

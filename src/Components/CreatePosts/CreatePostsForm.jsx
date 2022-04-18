@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './CreatePostsForm.css';
 
 
 const CreatePostsForm = (props) => {

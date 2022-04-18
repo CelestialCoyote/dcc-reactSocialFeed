@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,4 +10,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/******************
+* My css starts here.
+******************/
+
+body {
+  background-color: gray;
+}
+
+#main-container {
+  background-color: gray;
+  border: 1px solid blue;
+  padding: 1.0em;
+}
+
+#posts-container {
+  background-color: aqua;
+  border: 2px solid orange;
+  padding: 2.0em;
+}
+
+.post-container {
+  border: 1px;
+  border-style: solid;
+  border-color: purple;
+  border-radius: 0.5em;
+  margin-top: 1.0em;
+}
+
+
+#create-post-container {
+  border: 2px solid black;
+  border-radius: 0.5em;
+  
+  padding: 0.5em;
+}
+
+.create-post-entry {
+  padding-top: 0.5em;
+}
+
+.create-post-label {
+  width: 5.0em;
+}
+
+#submit-button {
+  background-color: white;
+  border-radius: 1.0em;
+  color: black;
+  width: 5.0em;
 }

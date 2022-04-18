@@ -16,14 +16,18 @@ function App() {
   }
 
   return (
+    //<div style={{display:"flex"}}>
+    //  <div style={{height: "200px",width:"200px",backgroundColor: "aliceblue"}}></div>
+    //  <div style={{height: "200px",width:"200px",backgroundColor: "greenyellow"}}></div>
+    //</div>
 
-    <div id='main-container' className='container-fluid'>
+    <div>
 
       <NavigationBar />
 
-      <div id='posts-container' className='col-9'>
+      <div>
 
-        <div className='border-box'>
+        <div>
           <CreatePosts addNewPost={addNewPost} />
         </div>
 
