@@ -14,28 +14,27 @@ function App() {
   }
 
   return (
-    //<div style={{display:"flex"}}>
-    //  <div style={{height: "200px",width:"200px",backgroundColor: "aliceblue"}}></div>
-    //  <div style={{height: "200px",width:"200px",backgroundColor: "greenyellow"}}></div>
-    //</div>
 
-    <div>
+    <div className=''>
 
-      <NavigationBar />
-
-      <div>
-
-        <div>
-          <CreatePosts addNewPost={addNewPost} />
-        </div>
-
-        <div>
-          <DisplayPosts parentPosts={posts} />
-        </div>
-
+      <div className='mb-3'>
+        <NavigationBar />
       </div>
-      
+
+      <div className='' style={{ backgroundColor: 'blue'}}>
+        <div className=''>
+          <div>
+            <CreatePosts addNewPost={addNewPost} />
+          </div>
+
+          <div>
+            <DisplayPosts parentPosts={posts} />
+          </div>
+        </div>
+      </div>
+
     </div>
+    
   );
 }
 

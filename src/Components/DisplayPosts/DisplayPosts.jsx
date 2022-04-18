@@ -8,13 +8,13 @@ const DisplayPosts = (props) => {
         <div>
             {props.parentPosts.map((post, index) => {
                 return (
-                    <div>
+                    <div key={index}>
                         <Post post={post}/>
                     </div>
                 );
             })}
         </div>
-        
+
     );
 }
 

@@ -17,14 +17,33 @@ code {
 * My css starts here.
 ******************/
 
-/*body {
-  background-color: gray;
-}*/
+body {
+  background-color: black;
+}
 
-#main-container {
+#create-post-form {
   background-color: gray;
-  border: 1px solid blue;
-  padding: 1.0em;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  
+  padding: 0.5em;
+  width: 100%;
+}
+
+.create-post-label {
+  background-color: yellow;
+  width: 5.0em;
+}
+
+.create-post-entry {
+  padding-top: 0.5em;
+}
+
+#post-submit-button {
+  background-color: gold;
+  border-radius: 1.0em;
+  color: black;
+  width: 5.0em;
 }
 
 #posts-container {
@@ -34,32 +53,8 @@ code {
 }
 
 .post-container {
-  border: 1px;
-  border-style: solid;
-  border-color: purple;
+  background-color: gray;
+  border: 1px solid black;
   border-radius: 0.5em;
   margin-top: 1.0em;
-}
-
-
-#create-post-container {
-  border: 2px solid black;
-  border-radius: 0.5em;
-  
-  padding: 0.5em;
-}
-
-.create-post-entry {
-  padding-top: 0.5em;
-}
-
-.create-post-label {
-  width: 5.0em;
-}
-
-#submit-button {
-  background-color: white;
-  border-radius: 1.0em;
-  color: black;
-  width: 5.0em;
 }

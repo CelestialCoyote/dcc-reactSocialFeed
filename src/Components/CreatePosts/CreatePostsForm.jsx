@@ -18,15 +18,24 @@ const CreatePostsForm = (props) => {
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form id='create-post-form' onSubmit={handleSubmit}>
 
-            <label className='create-post-label'>Name</label>
-            <input className='' type='text' value={name} onChange={(event) => setName(event.target.value)} /><br></br>
+            <div className='mb-3'>
+                <label for='name' className='form-label'>Name</label>
+                <input id='name' className='form-control' type='text' placeholder='John Smith' value={name} onChange={(event) => setName(event.target.value)} />
+            </div>
 
-            <label className='create-post-label'>Post</label>
-            <input className='' type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
+            <div className="mb-3">
+                <label for="post-text" className="form-label">Post Text</label>
+                <textarea id="post-text" className="form-control" rows="3" placeholder='What is on your mind?' value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+            </div>
 
-            <button id='submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
+            <div className='justify-content-end'>
+                <button id='post-submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
+            </div>
+            
+
+            
 
         </form>
 
