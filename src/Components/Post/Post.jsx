@@ -15,8 +15,8 @@ const Post = (props) => {
     }
 
     function handleDisLikes(event) {
-        setIsLiked(!isLiked);
-        if(isLiked) {
+        setIsDisLiked(!isDisLiked);
+        if(isDisLiked) {
             event.target.style.backgroundColor = "red";
         } else {
             event.target.style.backgroundColor = "gray";
