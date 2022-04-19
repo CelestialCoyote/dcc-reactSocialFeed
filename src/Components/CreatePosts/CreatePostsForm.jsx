@@ -26,17 +26,14 @@ const CreatePostsForm = (props) => {
             </div>
 
             <div className="mb-3">
-                <label for="post-text" className="form-label">Post Text</label>
-                <textarea id="post-text" className="form-control" rows="3" placeholder='What is on your mind?' value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+                <label for='post-text' className='form-label'>Post Text</label>
+                <input id='post-text' className='form-control' rows='3' placeholder='What is on your mind?' value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
 
             <div className='justify-content-end'>
-                <button id='post-submit-button' className='' type='submit' style={{'marginTop' : '1.0em'}}>Post</button>
+                <button id='post-submit-button' className='' type='submit'>Post</button>
             </div>
             
-
-            
-
         </form>
 
     );

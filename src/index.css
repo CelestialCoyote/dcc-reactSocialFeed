@@ -21,6 +21,11 @@ body {
   background-color: black;
 }
 
+
+/******************
+* CreatePostsForm.
+******************/
+
 #create-post-form {
   background-color: gray;
   border: 2px solid black;
@@ -41,20 +46,24 @@ body {
 
 #post-submit-button {
   background-color: gold;
-  border-radius: 1.0em;
+  border-radius: 0.5em;
   color: black;
+  margin-top: 1.5em;
   width: 5.0em;
 }
 
-#posts-container {
-  background-color: aqua;
-  border: 2px solid orange;
-  padding: 2.0em;
-}
+
+/******************
+* Post.
+******************/
 
 .post-container {
   background-color: gray;
   border: 1px solid black;
   border-radius: 0.5em;
   margin-top: 1.0em;
+}
+
+.like-button {
+  background-color: gray;
 }

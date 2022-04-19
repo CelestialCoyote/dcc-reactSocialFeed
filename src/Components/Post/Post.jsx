@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 
 
-
-
 const Post = (props) => {
     const [isLiked, setIsLiked] = useState(false);
     const [isDisLiked, setIsDisLiked] = useState(false);
-
-    let liked = "lightgreen"
-    let disliked = "red"
 
     function handleLikes(event) {
         setIsLiked(!isLiked);
@@ -19,6 +14,14 @@ const Post = (props) => {
         }
     }
 
+    function handleDisLikes(event) {
+        setIsLiked(!isLiked);
+        if(isLiked) {
+            event.target.style.backgroundColor = "red";
+        } else {
+            event.target.style.backgroundColor = "gray";
+        }
+    }
 
     return (
 
@@ -26,15 +29,8 @@ const Post = (props) => {
             <div>{props.post.name}</div>
             <div>{props.post.post}</div>
             
-            {/*<button onClick = {handleLikes}>Like</button>
-            <button onClick = {()=> setIsDisLiked(!isDisLiked)}>DisLike</button>*/}
-
-            <div>
-                <input type="radio" value="Like" name="likes" /> Like
-                <input type="radio" value="Dislike" name="likes" /> Dislike
-                <input type="radio" value="Neutral" name="likes" /> Neutral
-            </div>
-
+            <button className='like-button' onClick = {handleLikes}>Like</button>
+            <button className='like-button' onClick = {handleDisLikes}>DisLike</button>
         </div>
 
     );

@@ -21,8 +21,7 @@ function App() {
         <NavigationBar />
       </div>
 
-      <div className='' style={{ backgroundColor: 'blue'}}>
-        <div className=''>
+      <div className=''>
           <div>
             <CreatePosts addNewPost={addNewPost} />
           </div>
@@ -31,7 +30,6 @@ function App() {
             <DisplayPosts parentPosts={posts} />
           </div>
         </div>
-      </div>
 
     </div>
     
